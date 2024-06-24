@@ -6,6 +6,7 @@ class CircularQueue {
         this.rear = -1;
         this.currentSize = 0;
     }
+    
     enqueue(val) {
         if(this.currentSize===this.max) {
             console.log('Queue is already full');
@@ -21,6 +22,7 @@ class CircularQueue {
         this.data[ this.rear ] = val;
         this.currentSize++;
     }
+
     dequeue() {
         if(this.currentSize===0) {
             console.log('Queue is empty');
